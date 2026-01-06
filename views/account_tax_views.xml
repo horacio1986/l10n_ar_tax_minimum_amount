@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista de formulario de impuestos -->
+    <record id="view_tax_form_non_taxable_for_sales" model="ir.ui.view">
+        <field name="name">account.tax.form.non.taxable.sales</field>
+        <field name="model">account.tax</field>
+        <field name="inherit_id" ref="account.view_tax_form"/>
+        <field name="arch" type="xml">
+            <!-- Hacer el campo Monto no imponible visible también para ventas -->
+            <xpath expr="//field[@name='l10n_ar_non_taxable_amount']" position="attributes">
+                <attribute name="invisible">False</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
