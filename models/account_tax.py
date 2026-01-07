@@ -1,12 +1,10 @@
-from odoo import models, fields, api
-
+from odoo import models, fields
 
 class AccountTax(models.Model):
     _inherit = 'account.tax'
     
-    # Extender el campo existente para hacerlo visible también en ventas
     l10n_ar_non_taxable_amount = fields.Float(
-        compute=False,  # Desactivar el compute para hacerlo editable siempre
-        readonly=False,
-        store=True,
+        string='Monto no imponible (Ventas)',
+        default=0.0,
+        help='Para ventas: El impuesto se aplicará SOLO si la base imponible total de la factura supera este monto.'
     )

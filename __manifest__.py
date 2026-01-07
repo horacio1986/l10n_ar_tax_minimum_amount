@@ -17,6 +17,7 @@
     'depends': [
         'account',
         'l10n_ar',  # Localización Argentina
+        'l10n_ar_sale'
     ],
     'data': [
         'views/account_tax_views.xml',
