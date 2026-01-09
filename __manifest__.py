@@ -1,6 +1,6 @@
 {
     'name': 'Monto No Imponible para Impuestos de Venta',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.1.0',
     'category': 'Accounting/Localizations',
     'summary': 'Extiende el campo "Monto no imponible" para impuestos de venta',
     'description': """
